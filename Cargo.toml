@@ -1,0 +1,20 @@
+[package]
+name = "ecg-paint"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.77"
+description = "Drop-in replacement for Nihon Kohden's EcgPaint.exe: ECG file -> _AVE/_6CH images + .txt, without Wine"
+license = "GPL-3.0-or-later"
+publish = false
+
+[dependencies]
+encoding_rs = "0.8"
+fontdue = "0.9"
+jpeg-encoder = "0.6"
+miniz_oxide = "0.8"
+
+[dev-dependencies]
+png = "0.17"
+
+[profile.release]
+strip = true
